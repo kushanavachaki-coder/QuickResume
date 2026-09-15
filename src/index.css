@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide the rest of the web app */
+  body * {
+    visibility: hidden;
+  }
+  
+  /* Show only the printable area */
+  #resume-printable-area, #resume-printable-area * {
+    visibility: visible;
+  }
+  
+  /* Position the printable area at the absolute top-left */
+  #resume-printable-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* Make sure background is white and text is dark for maximum legibility */
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  /* Configure page margins */
+  @page {
+    size: letter portrait;
+    margin: 15mm 15mm 15mm 15mm;
+  }
+}

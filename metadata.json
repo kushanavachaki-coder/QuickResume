@@ -1,0 +1,6 @@
+{
+  "name": "QuickResume",
+  "description": "A minimal-input, AI-powered resume builder that generates professional, ATS-friendly one-page resumes in seconds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
